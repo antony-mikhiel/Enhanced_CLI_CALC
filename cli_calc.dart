@@ -5,7 +5,7 @@ import 'dart:math';
 
 showMenu() {
   print('\n######## calculator ########');
-  stdout.write('want to use the calculater (y/n) : ');
+  stdout.write('want to use the calculater (ENTER/y/n) : ');
 }
 
 /// super advanced calculator
@@ -15,6 +15,9 @@ void main(List<String> args) {
     while (true) {
       showMenu();
       String option = stdin.readLineSync() ?? ''; //take input
+      
+      if (option.isEmpty) option = 'y';  //ENTER
+
       if (option == "y") {
         /// user input
         stdout.write('calculate : ');

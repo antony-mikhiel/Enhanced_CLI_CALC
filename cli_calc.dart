@@ -112,6 +112,7 @@ void main(List<String> args) {
                   power *= base;
                 }
                 print('Result: $power');
+                printed = false;
                 break;
               } else {
                 result = pow(result, next);

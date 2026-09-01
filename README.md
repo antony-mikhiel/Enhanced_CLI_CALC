@@ -6,7 +6,7 @@
 3. run `chmod +x calculator_cli.dart`
 4. run the app by `./calculator_cli.dart`
 5. use calculation stuff like so:
-   ![Alt Text](./enhanced_cli_calc.mp4)
+   ![Alt Text](./enhanced_cli_calc.gif)
 
 
 # What did I learned

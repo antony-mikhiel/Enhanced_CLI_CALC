@@ -44,7 +44,8 @@ void main(List<String> args) {
               char == '-' ||
               char == '*' ||
               char == '/' ||
-              char == '^') {
+              char == '^' ||
+              char == '%') {
             // checks if it is a mathmatical operator
             terms.add(current); //takes the number currently in and ads it to "terms LISt" a number (THE THING(s) WE ARE DOING THE OPERATIONS ON) saves the number before the operator.
             operators.add(char); //checks SAVES CHAR in char list
@@ -85,6 +86,10 @@ void main(List<String> args) {
 
             case '*':
               result *= next;
+              printed = true;
+              break;
+            case '%':
+              result %= next;
               printed = true;
               break;
             case '/':

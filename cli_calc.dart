@@ -5,7 +5,7 @@ import 'dart:math';
 
 showMenu() {
   print('\n######## calculator ########');
-  stdout.write('want to use the calculater (ENTER/y/n) : ');
+  stdout.write('want to use the calculater (ENTER/y/m/n) : ');
 }
 
 /// super advanced calculator
@@ -17,11 +17,15 @@ void main(List<String> args) {
       String option = stdin.readLineSync() ?? ''; //take input
       
       if (option.isEmpty) option = 'y';  //ENTER
-
+      if (option == "m"){
+        print("menu of calculations:   + - * / ^ %");
+      }
       if (option == "y") {
         /// user input
         stdout.write('calculate : ');
         String calcinput = stdin.readLineSync() ?? ''; //take input
+
+
 
         String cleaned = calcinput;
 
